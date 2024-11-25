@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FerroMateriales: Su ferretería de confianza en Pomalca. Ofrecemos una amplia gama de materiales de construcción, como cemento, piedra chancada, y más. Contamos con tiendas físicas y un almacén con equipos como volquetes y tractores.">
+    <meta name="keywords" content="Ferretería, Materiales de Construcción, Pomalca, Cemento, Piedra Chancada, Volquetes, Tractores">
+    <meta name="author" content="FerroMateriales H&C">
+    <title>Agregados- Ferromateriales</title>
+    <link rel="icon" href="../H&C/img/logoferreteria.ico" type="image/x-icon">
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Inclusión de animaciones con Animate.css -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<!-- JavaScript para activar el carrusel (asegurarte de tener el JS de Bootstrap incluido en tu proyecto) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+</head>
+
+<body class="theme-color-1">
+    <!-- Header -->
+    <header>
+        <div class="top-header py-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6 mb-2 mb-lg-0">
+                        <ul class="list-inline mb-0 location-info">
+                            <li class="list-inline-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Pomalca, Chiclayo, Lambayeque</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-12 mb-2 mb-lg-0">
+                        <marquee class="announcement" onmouseover="this.stop();" onmouseout="this.start();">
+                            Agregados directo de cantera a tu obra: arena, piedra chancada, afirmado y más.
+                        </marquee>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-md-end">
+                        <ul class="list-inline mb-0 social-links">
+                            <li class="list-inline-item">
+                                <i class="fab fa-facebook-f"></i>
+                                <a href="https://www.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/" target="_blank">HC-Ferromateriales</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-tiktok"></i>
+                                <a href="https://www.tiktok.com/@chiclayojh" target="_blank">tiktok/@jh</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <a href="tel:+51971164073">971 164 073</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <div class="main-navigation">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <img src="img/Logo-mejorado-removebg-preview.png" alt="HC Ferromateriales" class="img-fluid">
+                </a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="principal.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="agregados.html" class="nav-link">Agregados <span class="badge">Cotizar Online</span></a></li>
+                  
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cotiz.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-qty">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+/* Logo */
+.logo-container {
+    text-align: center;
+    background-color: #f5ffff; /* Blanco */
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+    margin: 15px 0;
+  }
+.top-header {
+    background-color:#853516;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.location-info li,
+.social-links li {
+    color: #fff;
+    font-size: 14px;
+}
+
+.social-links a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.announcement {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* Main Navigation */
+.main-navigation {
+    background-color: #631804;
+    padding: 10px 0;
+    position: relative;
+}
+
+.brand-logo img {
+    max-height: 50px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-item .nav-link:hover {
+    color: #FFD700;
+}
+
+.badge {
+    background-color: #FFD700;
+    color: #631804;
+    font-weight: bold;
+    font-size: 0.8em;
+    position: absolute;
+    top: -5px;
+    right: -25px;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+.cart-icon {
+    color: #FFD700;
+    font-size: 18px;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav {
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        max-height: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-navigation.active .nav {
+        max-height: 500px;
+    }
+}
+
+/* Breadcrumb */
+.breadcrumb-section {
+    background-color: #f1f1f1;
+    padding: 5px 0;
+}
+
+.breadcrumb a {
+    color: #b2362f;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Simple animations */
+.nav-item {
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+.header-top {
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 14px;
+}
+
+.header-top .payment-icons span {
+    font-size: 12px;
+}
+
+.main-menu {
+    border-bottom: 1px solid #ddd;
+}
+
+.main-menu .brand-logo img {
+    max-height: 60px;
+}
+
+.main-menu nav .nav-link {
+    color: #333;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.main-menu .cart-icon {
+    font-size: 20px;
+}
+
+.breadcrumb-section {
+    background-color: #f1f1f1;
+}
+
+.breadcrumb-section .breadcrumb {
+    background-color: transparent;
+    margin: 0;
+}
+.delivery-section h2 {
+    color: #ff4c3b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+    </style>
+
+ <!-- HTML -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/images/home-banner/37.jpeg" alt="Proveedor Directo" class="d-block w-100">
+            <div class="carousel-caption centered-content">
+                <h2 class="animate__animated animate__fadeIn animate__delay-1s">Agregados Directo de Proveedor</h2>
+                <button class="btn btn-danger animate__animated animate__fadeIn animate__delay-2s" onclick="window.location.href='cotiz.html';">Cotizar Aquí</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/home-banner/39.jpg" alt="Agregados de Calidad" class="d-block w-100">
+            <div class="carousel-caption centered-content">
+                <h2 class="animate__animated animate__fadeIn animate__delay-1s">Agregados de Calidad para Construcción</h2>
+                <button class="btn btn-danger animate__animated animate__fadeIn animate__delay-2s" onclick="window.location.href='cotiz.html';">Cotizar Aquí</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/home-banner/38.jpeg" alt="Distribución en Lambayeque" class="d-block w-100">
+            <div class="carousel-caption centered-content">
+                <h2 class="animate__animated animate__fadeIn animate__delay-1s">Distribución a toda la Región Lambayeque</h2>
+                <button class="btn btn-danger animate__animated animate__fadeIn animate__delay-2s" onclick="window.location.href='cotiz.html';">Cotizar Aquí</button>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+<!-- CSS -->
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato', sans-serif;
+    }
+
+   /* Asegúrate de que las imágenes del carrusel ocupen toda la pantalla */
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Ajusta según necesites */
+    object-fit: cover; /* Asegura que la imagen cubra todo el área */
+}
+
+/* Centrado del contenido */
+.carousel-caption.centered-content {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta la posición para que esté en el medio */
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-caption h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px; /* Espaciado entre el texto y el botón */
+}
+
+/* Estilo del botón */
+.carousel-caption button {
+    margin-top: 10px;
+    animation: fadeInUp 2s ease-in-out forwards; /* Animación del botón */
+}
+
+/* Animación */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+</style>
+
+   <!-- Servicios -->
+<section class="text-center py-3 bg-white servicios-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 servicio-item">
+                <i class="fas fa-truck fa-2x text-danger"></i>
+                <h4>Envíos de Lunes a Sábado</h4>
+                <p>L-S de 5am hasta las 4pm</p>
+            </div>
+            <div class="col-md-4 servicio-item">
+                <i class="fas fa-industry fa-2x text-danger"></i>
+                <h4>Directo de Cantera</h4>
+                <p>Precio por mayor desde 10 m³</p>
+            </div>
+            <div class="col-md-4 servicio-item">
+                <i class="fas fa-credit-card fa-2x text-danger"></i>
+                <h4>Tarjetas de Crédito y Débito</h4>
+                <p>Aceptamos todas las tarjetas</p>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .servicios-bar {
+        background-color: #FFFFFF;
+        padding: 40px 20px;
+        border-top: 2px solid #FF8C00;
+        border-bottom: 2px solid #FF8C00;
+    }
+    
+    .servicio-item {
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #FFF;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .servicio-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .servicio-item i {
+        color: #B22222;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .servicio-item:hover i {
+        transform: scale(1.1);
+    }
+    
+    .servicio-item h4 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #FF8C00;
+        margin: 10px 0;
+    }
+    
+    .servicio-item p {
+        font-size: 14px;
+        color: #333;
+    }
+    
+</style>
+    
+<!--AQUI ESTA BACAN-->
+<!--CARRUSEL DE PRODUCTOS-->
+
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <!-- Producto 1 -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-arena-amarilla-en-cantera.html">
+                            <img src="assets/images/agregados/arena-amarilla.jpg" class="img-fluid blur-up lazyload bg-img" alt="Arena Amarilla">
+                        </a>
+                    </div>
+                    <div class="add-button" 
+                        data-id="1" 
+                        data-name="Arena amarilla" 
+                        data-price="21.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Arena amarilla</h6>
+                    <h4><span class="price-prefix">desde</span> S/ 21.00</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-piedra-chancada-media-en-cantera.html">
+                            <img src="assets/images/agregados/chancado12.jpg"
+                                 class="img-fluid blur-up lazyload bg-img"
+                                 alt="Piedra Chancada">
+                        </a>
+                    </div>
+                    <div class="add-button" 
+                        data-id="2" 
+                        data-name="Piedra chancada 1/2" 
+                        data-price="30.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Piedra chancada 1/2</h6>
+                    <h4><span class="price-prefix">desde</span> S/ 30.00</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Producto 3: Piedra Chancada de 3/4 -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-piedra-chancada-media-en-cantera.html">
+                            <img src="assets/images/agregados/chancado34.jpg"
+                                 class="img-fluid blur-up lazyload bg-img"
+                                 alt="Piedra Chancada de 3/4">
+                        </a>
+                    </div>
+                    <div class="add-button" 
+                        data-id="3" 
+                        data-name="Piedra Chancada de 3/4" data-price="36.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Piedra Chancada de 3/4</h6>
+        
+                <h4><span class="price-prefix">desde</span> S/ 36.00</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Producto 4: Piedra Base Azul Seleccionada -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-piedra-base-en-cantera.html">
+                            <img src="assets/images/agregados/piedrabase.jpg"
+                                 class="img-fluid blur-up lazyload bg-img"
+                                 alt="Piedra Base Azul Seleccionada">
+                        </a>
+                    </div>
+                    <div class="add-button" 
+                        data-id="4" 
+                        data-name="Piedra Base Azul Seleccionada" data-price="20.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Piedra Base Azul Seleccionada</h6>
+                                                
+                                                <h4><span class="price-prefix">desde</span> S/ 20.00</h4>
+                </div>
+            </div>
+        </div>
+         <!-- Producto 5: Arena Lavada de Río -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-arena-lavada-rio-en-cantera.html">
+                            <img src="assets/images/agregados/arenalavada.jpg" class="img-fluid blur-up lazyload bg-img"  alt="Arena Lavada de Río">
+                        </a>
+                    </div>
+                    <div class="add-button" 
+                        data-id="5" 
+                        data-name="Arena Lavada de Río" data-price="21.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Arena lavada de río</h6>
+        
+        <h4><span class="price-prefix">desde</span> S/ 21.00</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Producto 6: Roca -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-roca-en-cantera.html">
+                            <img src="assets/images/agregados/roca.jpg" class="img-fluid blur-up lazyload bg-img" alt="Roca">
+                        </a>
+                    </div>
+                    <div class="add-button" 
+                        data-id="6" 
+                        data-name="Roca" data-price="29.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Roca</h6>
+                
+                <h4><span class="price-prefix">desde</span> S/ 29.00</h4>
+                </div>
+            </div>
+        </div>
+      <!-- Producto 7: Roca Pequeña -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-roca-pequena-en-cantera.html">
+                            <img src="assets/images/agregados/rocapequena.jpg" class="img-fluid blur-up lazyload bg-img" alt="Roca Pequeña">
+                        </a>
+                    </div>
+                    <div class="add-button" 
+                        data-id="7" 
+                        data-name="Roca Pequeña" data-price="32.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Piedra base al barrer</h6>
+        
+        <h4><span class="price-prefix">desde</span> S/ 32.00</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Producto 8: Confitillo -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-confitillo-en-cantera.html">
+                            <img src="assets/images/agregados/confitillo.jpg" class="img-fluid blur-up lazyload bg-img" alt="Confitillo">
+                        </a>
+                    </div>
+                    <div class="add-button" 
+                    data-id="8" data-name="Confitillo" data-price="15.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Confitillo</h6>
+                
+                <h4><span class="price-prefix">desde</span> S/ 15.00</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Producto 9: Polvo de Piedra Chancada -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-polvo-piedra-chancada-en-cantera.html">
+                            <img src="assets/images/agregados/polvochancado.jpg" class="img-fluid blur-up lazyload bg-img" alt="Polvo de Piedra Chancada">
+                        </a>
+                    </div>
+                    <div class="add-button" 
+                    data-id="9" data-name="Polvo de Piedra Chancada" data-price="9.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Polvo de Piedra Chancada</h6>
+                
+                <h4><span class="price-prefix">desde</span> S/ 9.00</h4>
+                </div>
+            </div>
+        </div>
+       <!-- Producto 10: Hormigon -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-hormigon-en-cantera.html">
+                            <img src="assets/images/agregados/hormigon-azul.jpg" class="img-fluid blur-up lazyload bg-img" style="margin: 10px;" alt="">
+                          </a>
+                    </div>
+                    <div class="add-button" 
+                    data-id="10" data-name="Hormigón" data-price="30.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Hormigón</h6>
+      
+      <h4><span class="price-prefix">desde</span> S/ 30.00</h4>
+                </div>
+            </div>
+        </div>
+          <!-- Producto 11: Piedra Chancada de 3/4 -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-afirmado-en-cantera.html">
+                            <img src="assets/images/agregados/afirmado.jpg" class="img-fluid blur-up lazyload bg-img" style="margin: 10px;" alt="">
+                          </a>
+                    </div>
+                    <div class="add-button" 
+                    data-id="11" data-name="Afirmado" data-price="6.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Afirmado</h6>
+      
+      <h4><span class="price-prefix">desde</span> S/ 6.00</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Producto 12: Piedra Chancada de 3/4 -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-over-clasificado-en-cantera.html">
+                            <img src="assets/images/agregados/cascoteover.jpg" class="img-fluid blur-up lazyload bg-img" style="margin: 10px;" alt="">
+                          </a>
+                    </div>
+                    <div class="add-button" 
+                    data-id="12" data-name="Piedra Over Azul Clasificado" data-price="36.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Piedra Over Azul Clasificado</h6>
+      
+      <h4><span class="price-prefix">desde</span> S/ 36.00</h4>
+                </div>
+            </div>
+        </div>
+          <!-- Producto 13: Arena Fina -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-arena-fina-en-cantera.html">
+                            <img src="assets/images/agregados/arena-fina.jpg" class="img-fluid blur-up lazyload bg-img" style="margin: 10px;" alt="">
+                          </a>
+                    </div>
+                    <div class="add-button" 
+                    data-id="13" data-name="Arena Fina" data-price="36.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Arena Fina</h6>
+      
+      <h4><span class="price-prefix">desde</span> S/ 36.00</h4>
+                </div>
+            </div>
+        </div>
+         <!-- Producto 14: Ripio Corriente -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-ripio-corriente-en-cantera.html">
+                            <img src="assets/images/agregados/ripio-corriente.jpg" class="img-fluid blur-up lazyload bg-img" alt="Ripio Corriente">
+                          </a>
+                    </div>
+                    <div class="add-button" 
+                    data-id="14" data-name="Ripio Corriente" data-price="36.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Ripio Corriente</h6>
+                
+                <h4><span class="price-prefix">desde</span> S/ 36.00</h4>
+                </div>
+            </div>
+        </div>
+         <!-- Producto 15: Over Zarandeado -->
+        <div class="swiper-slide">
+            <div class="product-box">
+                <div class="img-wrapper">
+                    <div class="front">
+                        <a href="agregados-de-construccion/venta-de-over-bruto-en-cantera.html">
+                            <img src="assets/images/agregados/over-zarandeado.jpg" class="img-fluid blur-up lazyload bg-img" alt="Over Zarandeado">
+                          </a>
+                    </div>
+                    <div class="add-button" 
+                    data-id="15" data-name="Over Zarandeado" data-price="36.00">
+                        Agregar al carrito
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Over Zarandeado</h6>
+      
+      <h4><span class="price-prefix">desde</span> S/ 36.00</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="container mb-1 mt-0">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="product-para">
+                <p class="text-center">
+                    <a href="agregados.html" class="btn btn-solid hover-solid btn-animation me-3">
+                        Ver todos los agregados
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #FF8C00;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn:hover {
+        background-color: #B22222;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-animation {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-animation::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .btn-animation:hover::after {
+        left: 0;
+    }
+    
+</style>
+
+ <!-- Tab product -->
+    <section class="tools_product section-b-space pt-6">
+        <div class="container">
+                <div class="row">
+                    <div class="col-12 product-related">
+                        <h2>Videos (<a href="https://www.tiktok.com/@chiclayojh?lang=en" target="_blank"
+                                style="color:#ff4c3b;">@chiclayojh</a>)</h2>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col">
+                    <style>
+                        .video-container {
+                            position: relative;
+                            width: 100%;
+                            overflow: hidden;
+                            border-radius: 10px !important;
+                            aspect-ratio: 16 / 9;
+                            /* Ajusta la altura para una relación de aspecto widescreen */
+                        }
+
+                        .video-container video {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            /* Ajusta el video sin distorsionarlo */
+                            border-radius: 10px !important;
+                        }
+                    </style>
+                    <div class="theme-tab">
+                        <div class="tab-content-cls ratio_asos">
+                            <div id="tab-4" class="tab-content active default">
+                                <div class="row">
+                                    <!-- Video local 1 -->
+                                    <div class="col-xl-4 col-md-6 col-12">
+                                        <div class="product-box" style="margin-bottom:20px">
+                                            <div class="img-wrapper">
+                                                <div class="front">
+                                                    <div class="video-container">
+                                                        <video controls preload="auto">
+                                                            <source src="assets/images/trabajo/trabajadores.mp4"
+                                                                type="video/mp4">
+                                                            Tu navegador no soporta el elemento de video.
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                Cargando arena gruesa amarilla en cantera #arenaamarilla #cantera
+                                                #arengruesa #agregados
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Video local 2 -->
+                                    <div class="col-xl-4 col-md-6 col-12">
+                                        <div class="product-box" style="margin-bottom:20px">
+                                            <div class="img-wrapper">
+                                                <div class="front">
+                                                    <div class="video-container">
+                                                        <video controls preload="auto">
+                                                            <source src="assets/images/trabajo/chamba.mp4"
+                                                                type="video/mp4">
+                                                            Tu navegador no soporta el elemento de video.
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                Un día en la ferreteria #ferromateriales #fierros #arengruesa
+                                                #agregados
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Video local 3 -->
+                                    <div class="col-xl-4 col-md-6 col-12">
+                                        <div class="product-box" style="margin-bottom:20px">
+                                            <div class="img-wrapper">
+                                                <div class="front">
+                                                    <div class="video-container">
+                                                        <video controls preload="auto">
+                                                            <source src="assets/images/trabajo/ladrillos.mp4"
+                                                                type="video/mp4">
+                                                            Tu navegador no soporta el elemento de video.
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                Ladrillos de buena calidad #ladrillos #ferromateriales #arengruesa
+                                                #agregados
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<style>
+/* Estilo para la caja del producto */
+.product-box {
+    text-align: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.product-box .img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-box img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.product-box img:hover {
+    transform: scale(1.1);
+}
+
+/* Botón de "Agregar al carrito" */
+.add-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.img-wrapper:hover .add-button {
+    opacity: 1;
+    visibility: visible;
+    bottom: 20px;
+}
+
+/* Efecto hover en el botón */
+.add-button:hover {
+    background: #ff4500;
+}
+</style>
+<footer>
+    <video autoplay muted loop id="footer-video">
+        <source src="../H&C/assets/images/trabajo/video-ladrillo.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+    </video>
+    
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="icon-section">
+                <div class="icon-item">
+                    <img src="img/FOOTER/mano.svg" alt="Envíos a todo Chiclayo">
+                    <p><i class="fas fa-truck"></i> Envíos a todo Chiclayo<br><small>Rápido y seguro</small></p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/FOOTER/garantia-.svg" alt="Garantía en nuestros productos">
+                    <p><i class="fas fa-shield-alt"></i> Garantía en todos nuestros productos<br><small>Hasta 3 años
+                            de garantía</small></p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/FOOTER/distribuidor.svg" alt="Distribuidores autorizados">
+                    <p><i class="fas fa-certificate"></i> Distribuidores autorizados<br><small>Más de 10
+                            marcas</small></p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/FOOTER/compras-.svg" alt="Compra fácil y segura">
+                    <p><i class="fas fa-shopping-cart"></i> Compra fácil y segura<br><small>Compras 100%
+                            seguras</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h4><i class="fas fa-headset"></i> Servicio al Cliente</h4>
+                <ul>
+                    <li><a href="#" class="footer-link"><i class="fas fa-question-circle"></i> Preguntas
+                            Frecuentes</a></li>
+                    <li><a href="#" class="footer-link">Libro de Reclamos</a></li>
+                    <li><a href="#" class="footer-link">Alquiler de Maquinaria</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-map-marker-alt"></i> Destinos</h4>
+                <ul>
+                    <li><a href="agregados-de-construccion-en-chiclayo.html" class="footer-link">Chiclayo</a></li>
+                    <li><a href="agregados-de-construccion-en-chongoyape.html" class="footer-link">Chongoyape</a>
+                    </li>
+                    <li><a href="agregados-de-construccion-en-patapo.html" class="footer-link">Pátapo</a></li>
+                    <li><a href="agregados-de-construccion-en-lambayeque.html" class="footer-link">Lambayeque</a>
+                    </li>
+                    <li><a href="agregados-de-construccion-en-pimentel.html" class="footer-link">Pimentel</a></li>
+                    <li><a href="agregados-de-construccion-en-santa-rosa.html" class="footer-link">Santa Rosa</a>
+                    </li>
+                    <li><a href="agregados-de-construccion-en-monsefu.html" class="footer-link">Monsefú</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-info-circle"></i> Información</h4>
+                <p>Tienda virtual de agregados de construcción al por mayor desde 10 m<sup>3</sup>. Llámanos al
+                    <a href="tel:+51951570085" class="footer-link">951 570 085</a>.
+                </p>
+                <p>Encuéntranos en
+                    <a href="https://web.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/?_rdc=1&_rdr"
+                        target="_blank" class="footer-link">
+                        <i class="fab fa-facebook"></i> /FerroMateriales
+                    </a>
+                </p>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-store"></i> Nuestras Tiendas Autorizadas</h4>
+                <p>Calle: San Francisco Mz. "E" Lt.5 C.P. San Francisco de Asis, Chiclayo</p>
+                <p>Carretera Pomalca Km 3.50, Mz. E, Lote 6, Urb. Los Precursores, Chiclayo Lambayeque</p>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-clock"></i> Horario</h4>
+                <p>Lunes a Sábado 7:00 am - 6:00 pm</p>
+                <p>Domingo 8:00 am - 1:00 pm</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <p>&copy; 2024 FerroMateriales. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <img src="assets/images/icon/visa.png" alt="Visa">
+                <img src="assets/images/icon/mastercard.png" alt="MasterCard">
+                <img src="assets/images/icon/paypal.png" alt="PayPal">
+                <img src="assets/images/icon/american-express.png" alt="American Express">
+                <img src="assets/images/icon/discover.png" alt="Discover">
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+     /* FOOTER */
+/* Video de fondo */
+#footer-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Estilos del footer */
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenido sobre el video */
+.footer-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 40px 20px;
+    background-color: rgba(10, 1, 1, 0.405);
+}
+
+.footer-top {
+    border-bottom: 1px solid #e1dede;
+    padding-bottom: 20px;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.icon-item {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.icon-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Ajuste para hacer que las columnas quepan en una sola fila en pantallas grandes */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-column {
+    width: calc(20% - 10px);
+    min-width: 180px;
+    max-width: 250px;
+}
+
+/* Ajuste para los íconos de tarjetas de crédito sin filtro */
+.footer-bottom-bar .social-icons img {
+    max-width: 30px;
+    transition: transform 0.3s;
+    margin: 0 5px;
+}
+
+.footer-bottom-bar .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Otros ajustes para mejorar la visibilidad y el espacio */
+.footer-content {
+    padding: 20px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: orange; /* Color naranja */
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.8); /* Efecto de brillo */
+    animation: flicker 1.5s infinite alternate; /* Animación de parpadeo */
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Estilos de la lista */
+.footer-column ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+}
+
+.footer-column ul li,
+.footer-column p {
+    font-size: 14px;
+}
+
+/* Color blanco para los enlaces */
+.footer-link {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.footer-link:hover {
+    color: #e15103;
+}
+
+.footer-bottom-bar {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #bcadad;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 3, spaceBetween: 30 },
+            1024: { slidesPerView: 4, spaceBetween: 40 },
+        },
+    });
+
+    // Función para agregar al carrito
+    function addToCart(product) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const existingProduct = cart.find(item => item.id === product.id);
+        if (existingProduct) {
+            existingProduct.quantity += 1;
+        } else {
+            cart.push({ ...product, quantity: 1 });
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`Producto "${product.name}" agregado al carrito`);
+    }
+
+    // Agregar eventos a los botones
+    const addButtons = document.querySelectorAll('.add-button');
+    addButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const product = {
+                id: parseInt(button.dataset.id),
+                name: button.dataset.name,
+                price: parseFloat(button.dataset.price)
+            };
+            addToCart(product);
+        });
+    });
+});
+</script>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
+    

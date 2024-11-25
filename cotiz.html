@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.20/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FerroMateriales: Su ferretería de confianza en Pomalca.">
+    <meta name="keywords" content="Ferretería, Materiales de Construcción, Pomalca">
+    <meta name="author" content="FerroMateriales H&C">
+    <title>Cotiza online tus agregados de construcción</title>
+    <link rel="icon" href="../H&C/img/logoferreteria.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/cotiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="theme-color-1">
+    <!-- Header -->
+    <header>
+        <div class="top-header py-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6 mb-2 mb-lg-0">
+                        <ul class="list-inline mb-0 location-info">
+                            <li class="list-inline-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Pomalca, Chiclayo, Lambayeque</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-12 mb-2 mb-lg-0">
+                        <marquee class="announcement" onmouseover="this.stop();" onmouseout="this.start();">
+                            Agregados directo de cantera a tu obra: arena, piedra chancada, afirmado y más.
+                        </marquee>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-md-end">
+                        <ul class="list-inline mb-0 social-links">
+                            <li class="list-inline-item">
+                                <i class="fab fa-facebook-f"></i>
+                                <a href="https://www.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/"
+                                    target="_blank">HC-Ferromateriales</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-tiktok"></i>
+                                <a href="https://www.tiktok.com/@chiclayojh" target="_blank">tiktok/@jh</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <a href="tel:+51971164073">971 164 073</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <div class="main-navigation">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <img src="img/Logo-mejorado-removebg-preview.png" alt="HC Ferromateriales" class="img-fluid">
+                </a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="Index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="agregados.html" class="nav-link">Agregados <span
+                                class="badge">Cotizar Online</span></a></li>
+                  
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cotiz.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-qty">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="page-title">
+                        <h1 style="font-size:17px">Cotización de agregados de construcción al por mayor</h1>
+                    </div>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="destinos.html">Destinos</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cantera</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+<!-- Tabla de carrito -->
+<section class="cart-section section-b-space pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 table-responsive-xs">
+                <div class="table-responsive text-center" id="cartDiv">
+                    <table class="table table-bordered" id="cartTable">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio Unitario</th>
+                                <th>Total</th>
+                                <th>Acciones</th>
+                            </tr>
+                            <style>
+                                /* Estilo general para la tabla */
+                                #cartTable {
+                                    width: 100%;
+                                    border-collapse: collapse;
+                                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                                    font-family: 'Arial', sans-serif;
+                                }
+                            
+                                /* Encabezado de la tabla */
+                                #cartTable th {
+                                    background-color: #FF8C00; /* Naranja */
+                                    color: #fff;
+                                    padding: 12px 15px;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
+                            
+                                /* Celdas de la tabla */
+                                #cartTable td {
+                                    padding: 10px;
+                                    text-align: center;
+                                    border: 1px solid #ddd;
+                                    color: #4E4E4E;
+                                }
+                            
+                                /* Estilo para las filas de la tabla al pasar el cursor (hover effect) */
+                                #cartTable tr:hover {
+                                    background-color: #B22222; /* Rojo oscuro */
+                                    color: #fff;
+                                    transform: scale(1.02); /* Animación de aumento al pasar el cursor */
+                                    transition: all 0.3s ease;
+                                }
+                            
+                                /* Estilo para el botón de eliminar */
+                                .btn-danger {
+                                    background-color: #B22222; /* Rojo oscuro */
+                                    color: white;
+                                    border: none;
+                                    padding: 6px 12px;
+                                    cursor: pointer;
+                                    transition: background-color 0.3s ease;
+                                }
+                            
+                                .btn-danger:hover {
+                                    background-color: #8B0000; /* Rojo más oscuro al pasar el cursor */
+                                }
+                            
+                                /* Entrada de cantidad */
+                                .form-control-sm {
+                                    width: 60px;
+                                    margin: 0 auto;
+                                }
+                            
+                                /* Fila de la tabla cuando no hay productos */
+                                #cartTable tbody tr td {
+                                    color: #B22222; /* Rojo oscuro */
+                                    font-style: italic;
+                                }
+                            
+                                /* Estilo de las celdas del total */
+                                #cartSummary {
+                                    font-size: 1.2rem;
+                                    color: #FF8C00; /* Naranja */
+                                    font-weight: bold;
+                                }
+                            
+                                /* Resaltar filas de productos */
+                                #cartTable tbody tr:nth-child(odd) {
+                                    background-color: #FFFAF0; /* Color marrón claro */
+                                }
+                            
+                                #cartTable tbody tr:nth-child(even) {
+                                    background-color: #FFF0E0; /* Otro tono marrón claro */
+                                }
+                            
+                                /* Animación de entrada de la tabla */
+                                .table-responsive {
+                                    opacity: 0;
+                                    animation: fadeIn 1s forwards;
+                                }
+                            
+                                @keyframes fadeIn {
+                                    from {
+                                        opacity: 0;
+                                    }
+                                    to {
+                                        opacity: 1;
+                                    }
+                                }
+                            </style>
+                            
+                        </thead>
+                        <tbody>
+                            <!-- Productos se agregarán aquí dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resumen y botones -->
+<div class="container mt-3" style="background-color: #F4F4F4; border-radius: 8px; padding: 20px;">
+    <p id="cartSummary" class="text-right font-weight-bold" style="color: #FF8C00;"></p>
+    
+    <label for="clientRuc" style="font-weight: bold; color: #333;">RUC:</label>
+    <input type="text" id="clientRuc" placeholder="Ingresa el RUC" class="form-control mb-2" 
+           style="border: 2px solid #FF8C00; border-radius: 5px; background-color: #FFFFFF; color: #333; width: 80%;">
+    
+    <label for="clientName" style="font-weight: bold; color: #333;">Razón Social:</label>
+    <input type="text" id="clientName" placeholder="Ingresa la Razón Social" class="form-control mb-2" 
+           style="border: 2px solid #FF8C00; border-radius: 5px; background-color: #FFFFFF; color: #333; width: 80%;">
+    
+    <label for="phoneNumber" style="font-weight: bold; color: #333;">Número de teléfono:</label>
+    <div class="input-group mb-2">
+        <select id="countryCode" class="form-control" style="max-width: 100px; background-color: #FF8C00; color: white;">
+            <option value="51">+51 (Perú)</option>
+        </select>
+        <input type="tel" id="phoneNumber" placeholder="Número sin código de país" class="form-control" 
+               style="border: 2px solid #FF8C00; border-radius: 5px; background-color: #FFFFFF; color: #333;">
+    </div>
+    
+    <!-- Contenedor de los botones con distribución de izquierda a derecha -->
+    <div class="d-flex justify-content-between">
+        <button onclick="addMoreProducts()" class="btn-water-fill mt-2" 
+                style="padding: 10px 20px; font-weight: bold; border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            Añadir más productos
+        </button>
+        
+        <button onclick="generatePDF()" class="btn-water-fill mt-2" 
+                style="padding: 10px 20px; font-weight: bold; border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            Generar PDF
+        </button>
+    </div>
+</div>
+
+<!-- Estilo para el efecto de llenado de agua -->
+<style>
+    .btn-water-fill {
+        position: relative;
+        background-color: #FF9933;
+        color: #fff;
+        overflow: hidden;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .btn-water-fill::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 159, 64, 0.7);
+        z-index: 0;
+        transition: bottom 0.5s ease;
+    }
+
+    .btn-water-fill:hover::before {
+        bottom: 0;
+    }
+
+    .btn-water-fill > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    .btn-water-fill:hover {
+        background-color: #FF7F00;
+    }
+</style>
+
+
+<script>
+    function loadCart() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartTableBody = document.querySelector('#cartTable tbody');
+        cartTableBody.innerHTML = '';
+
+        if (cart.length === 0) {
+            cartTableBody.innerHTML = '<tr><td colspan="5">Tu carrito está vacío</td></tr>';
+        } else {
+            cart.forEach((product, index) => {
+                const total = (product.price * product.quantity).toFixed(2);
+                const row = cartTableBody.insertRow();
+                row.innerHTML = `
+                    <td>${product.name || 'Producto desconocido'}</td>
+                    <td>
+                        <input type="number" min="1" value="${product.quantity}" 
+                               class="form-control form-control-sm" 
+                               onchange="updateQuantity(${index}, this.value)">
+                    </td>
+                    <td>S/. ${product.price.toFixed(2)}</td>
+                    <td>S/. ${total}</td>
+                    <td><button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">Eliminar</button></td>
+                `;
+            });
+            updateCartSummary();
+        }
+    }
+
+    function updateQuantity(index, quantity) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart[index].quantity = parseInt(quantity);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+
+    function removeFromCart(index) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+
+   
+
+    function updateCartSummary() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const totalPrice = cart.reduce((sum, product) => sum + (product.price * product.quantity), 0).toFixed(2);
+        document.getElementById('cartSummary').textContent = `Precio Total: S/. ${totalPrice}`;
+    }
+
+    document.addEventListener('DOMContentLoaded', loadCart);
+
+    function addMoreProducts() {
+        window.location.href = 'agregados.html';
+    }
+
+    function generatePDF() { 
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const ruc = document.getElementById('clientRuc').value || 'No especificado';
+        const razonSocial = document.getElementById('clientName').value || 'Cliente';
+        const totalPrice = cart.reduce((sum, product) => sum + (product.price * product.quantity), 0).toFixed(2);
+    
+        // Add larger logo with more space
+        const logoURL = 'img/Logo-mejorado.png'; // Replace with your logo path
+        doc.addImage(logoURL, 'PNG', 10, 10, 80, 35); // Increased size for more prominence
+    
+        // First Block of Text under Logo
+        doc.setFontSize(10);
+        doc.text("RUC: 20600134648 | H & C FERROMATERIALES S.R.L.", 10, 60);
+        doc.text("Agregados de construcción directo de cantera", 10, 68);
+        doc.text("hcferromaterialessrl@hotmail.com", 10, 76);
+        doc.text("Pomalca, Chiclayo, Lambayeque", 10, 84);
+        doc.text("Tel: +51 971 164 073 | +51 903 511 797", 10, 92);
+    
+        // Title "COTIZACIÓN"
+        doc.setFontSize(20);
+        doc.setFont('helvetica', 'bold');
+        doc.text("COTIZACIÓN", 120, 30); // Adjusted position to center and align with the logo
+    
+        // Second Block of Text under "COTIZACIÓN" title, moved to the left
+        doc.setFontSize(10);
+        doc.setFont('helvetica', 'normal');
+        doc.text("Fecha de cotización: " + new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }), 120, 55);
+        doc.text("RUC: " + ruc, 120, 63);
+        doc.text("Razón Social: " + razonSocial, 120, 71);
+        doc.text("Destino: Cantera", 120, 79);
+        doc.text("Cotización N°: 32", 120, 87);
+    
+        // Table of products with orange header
+        doc.autoTable({
+            startY: 100,
+            head: [['#', 'Descripción', 'Precio Unitario', 'Cantidad', 'SubTotal']],
+            body: cart.map((product, index) => [
+                index + 1,
+                product.name,
+                { content: `S/. ${product.price.toFixed(2)}`, styles: { fontStyle: 'bold' } },
+                product.quantity,
+                `S/. ${(product.price * product.quantity).toFixed(2)}`
+            ]),
+            styles: { fontSize: 11 },
+            headStyles: { fillColor: [255, 128, 0] } // Orange color for the header
+        });
+    
+        // Bolded Total amount
+        doc.setFontSize(14);
+        doc.setFont('helvetica', 'bold'); // Set to bold
+        doc.text(`TOTAL: S/. ${totalPrice}`, 10, doc.autoTable.previous.finalY + 15);
+    
+        // Notes section with standard font size
+        doc.setFontSize(11);
+        doc.setFont('helvetica', 'normal'); // Reset to normal
+        doc.text("Nota:", 10, doc.autoTable.previous.finalY + 25);
+        doc.setFontSize(10);
+        const notes = [
+            "- Los precios de esta cotización no incluyen IGV.",
+            "- Los vehículos son cuidadosamente seleccionados de acuerdo a la cantidad de material requerido.",
+            "- La capacidad mínima de nuestros vehículos es de 10m3 y se cargan en su totalidad.",
+            "- Si el cliente lo requiere, tiene todo el derecho de poder medir cada vehículo que llega a su obra.",
+            "- Los productos cotizados salen directamente de cantera a la ubicación del cliente.",
+            "- Atendemos pedidos mixtos, ejem. 5m3 de arena gruesa y 10m3 de piedra.",
+            "- Recuerde que los precios pueden variar de acuerdo a la cantidad requerida."
+        ];
+        notes.forEach((note, index) => {
+            doc.text(note, 10, doc.autoTable.previous.finalY + 31 + (index * 6));
+        });
+    
+        // Footer with website link
+        doc.text("www.ferromaterialesH&C.com", 10, doc.autoTable.previous.finalY + 80);
+    
+        doc.save(`cotizacion_${razonSocial}.pdf`);
+    }
+    
+    
+</script>    
+
+
+
+
+
+
+<footer>
+    <video autoplay muted loop id="footer-video">
+        <source src="../H&C/assets/images/trabajo/video-ladrillo.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+    </video>
+    
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="icon-section">
+                <div class="icon-item">
+                    <img src="img/FOOTER/mano.svg" alt="Envíos a todo Chiclayo">
+                    <p><i class="fas fa-truck"></i> Envíos a todo Chiclayo<br><small>Rápido y seguro</small></p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/FOOTER/garantia-.svg" alt="Garantía en nuestros productos">
+                    <p><i class="fas fa-shield-alt"></i> Garantía en todos nuestros productos<br><small>Hasta 3 años
+                            de garantía</small></p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/FOOTER/distribuidor.svg" alt="Distribuidores autorizados">
+                    <p><i class="fas fa-certificate"></i> Distribuidores autorizados<br><small>Más de 10
+                            marcas</small></p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/FOOTER/compras-.svg" alt="Compra fácil y segura">
+                    <p><i class="fas fa-shopping-cart"></i> Compra fácil y segura<br><small>Compras 100%
+                            seguras</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h4><i class="fas fa-headset"></i> Servicio al Cliente</h4>
+                <ul>
+                    <li><a href="#" class="footer-link"><i class="fas fa-question-circle"></i> Preguntas
+                            Frecuentes</a></li>
+                    <li><a href="#" class="footer-link">Libro de Reclamos</a></li>
+                    <li><a href="#" class="footer-link">Alquiler de Maquinaria</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-map-marker-alt"></i> Destinos</h4>
+                <ul>
+                    <li><a href="agregados-de-construccion-en-chiclayo.html" class="footer-link">Chiclayo</a></li>
+                    <li><a href="agregados-de-construccion-en-chongoyape.html" class="footer-link">Chongoyape</a>
+                    </li>
+                    <li><a href="agregados-de-construccion-en-patapo.html" class="footer-link">Pátapo</a></li>
+                    <li><a href="agregados-de-construccion-en-lambayeque.html" class="footer-link">Lambayeque</a>
+                    </li>
+                    <li><a href="agregados-de-construccion-en-pimentel.html" class="footer-link">Pimentel</a></li>
+                    <li><a href="agregados-de-construccion-en-santa-rosa.html" class="footer-link">Santa Rosa</a>
+                    </li>
+                    <li><a href="agregados-de-construccion-en-monsefu.html" class="footer-link">Monsefú</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-info-circle"></i> Información</h4>
+                <p>Tienda virtual de agregados de construcción al por mayor desde 10 m<sup>3</sup>. Llámanos al
+                    <a href="tel:+51951570085" class="footer-link">951 570 085</a>.
+                </p>
+                <p>Encuéntranos en
+                    <a href="https://web.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/?_rdc=1&_rdr"
+                        target="_blank" class="footer-link">
+                        <i class="fab fa-facebook"></i> /FerroMateriales
+                    </a>
+                </p>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-store"></i> Nuestras Tiendas Autorizadas</h4>
+                <p>Calle: San Francisco Mz. "E" Lt.5 C.P. San Francisco de Asis, Chiclayo</p>
+                <p>Carretera Pomalca Km 3.50, Mz. E, Lote 6, Urb. Los Precursores, Chiclayo Lambayeque</p>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-clock"></i> Horario</h4>
+                <p>Lunes a Sábado 7:00 am - 6:00 pm</p>
+                <p>Domingo 8:00 am - 1:00 pm</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <p>&copy; 2024 FerroMateriales. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <img src="assets/images/icon/visa.png" alt="Visa">
+                <img src="assets/images/icon/mastercard.png" alt="MasterCard">
+                <img src="assets/images/icon/paypal.png" alt="PayPal">
+                <img src="assets/images/icon/american-express.png" alt="American Express">
+                <img src="assets/images/icon/discover.png" alt="Discover">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

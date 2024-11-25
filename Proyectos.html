@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Entregados - FerroMateriales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="logo">
+            <h1>FerroMateriales</h1>
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Proveedores</a>
+            <a href="#">Proyectos Entregados</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Proyectos Entregados -->
+    <section class="proyectos">
+        <h2>Proyectos Entregados</h2>
+        <p>Estos son algunos de los proyectos realizados con nuestros materiales y servicios.</p>
+        
+        <!-- Galería de imágenes -->
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Edificio Comercial</h3>
+                <p>Ubicación: Lima, Perú</p>
+            </div>
+            <div class="proyecto">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <h3>Residencial Familiar</h3>
+                <p>Ubicación: Chiclayo, Perú</p>
+            </div>
+            <div class="proyecto">
+                <img src="proyecto3.jpg" alt="Proyecto 3">
+                <h3>Obra Pública</h3>
+                <p>Ubicación: Trujillo, Perú</p>
+            </div>
+        </div>
+
+        <!-- Video de proyectos -->
+        <div class="videos">
+            <h3>Videos de nuestros proyectos</h3>
+            <video controls>
+                <source src="proyecto-video1.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <video controls>
+                <source src="proyecto-video2.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+
+        <!-- Testimonios -->
+        <div class="testimonios">
+            <h3>Testimonios de nuestros clientes</h3>
+            <div class="testimonio">
+                <p>"Excelente calidad de materiales y un servicio de primera. Mi proyecto fue un éxito."</p>
+                <span>- Juan Pérez</span>
+            </div>
+            <div class="testimonio">
+                <p>"Gracias a FerroMateriales, mi construcción terminó antes del tiempo estimado. ¡Recomendado!"</p>
+                <span>- María López</span>
+            </div>
+        </div>
+
+        <!-- Estadísticas -->
+        <div class="estadisticas">
+            <div class="stat">
+                <h3>120+</h3>
+                <p>Proyectos entregados</p>
+            </div>
+            <div class="stat">
+                <h3>200+</h3>
+                <p>Clientes felices</p>
+            </div>
+            <div class="stat">
+                <h3>50+</h3>
+                <p>Colaboradores</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 FerroMateriales. Todos los derechos reservados.</p>
+    </footer>
+    <style>
+        /* Estilos Generales */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8B4513;
+    color: white;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+/* Sección Proyectos */
+.proyectos {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.proyectos h2 {
+    color: #8B4513;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.proyecto {
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+.proyecto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Videos */
+.videos video {
+    width: 45%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonios */
+.testimonios {
+    margin-top: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Estadísticas */
+.estadisticas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat h3 {
+    color: #8B4513;
+    font-size: 2rem;
+    margin: 0;
+}
+
+    </style>
+</body>
+</html>

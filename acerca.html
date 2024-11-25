@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FerroMateriales: Su ferretería de confianza en Pomalca. Ofrecemos una amplia gama de materiales de construcción, como cemento, piedra chancada, y más. Contamos con tiendas físicas y un almacén con equipos como volquetes y tractores.">
+  <meta name="keywords"
+    content="Ferretería, Materiales de Construcción, Pomalca, Cemento, Piedra Chancada, Volquetes, Tractores">
+  <meta name="author" content="FerroMateriales H&C">
+  <title>FerroMateriales H&C - Materiales de Construcción y Equipos</title>
+  <link rel="icon" href="img/logoferreteria.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/acerca de.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+  <!--LOGO-->
+  <div class="logo-container">
+    <img src="img/Logo-mejorado.png" alt="FerroMateriales Logo" class="logo" />
+  </div>
+  <!-- Banner de contacto -->
+  <div class="contact-banner">
+    <a href="tel:971164073">
+      <i class="fas fa-phone-alt"></i> Venta telefónica (+51) 971 164 073
+    </a>
+    <a href="https://wa.me/903511797">
+      <i class="fab fa-whatsapp"></i> Venta por WhatsApp 912 184 486
+    </a>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="principal.html">FerroMateriales</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="principal.html"><i class="fas fa-home"></i> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acerca.html"><i class="fas fa-info-circle"></i> Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Productos.php"><i class="fas fa-box"></i> Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proveedores.html"><i class="fas fa-truck"></i> Proveedores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html"><i class="fas fa-truck"></i> Agregados de Construcción</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ <!-- Sección de Introducción -->
+<section class="intro">
+  <div class="intro-text">
+    <h1>Sobre H&C-FerroMateriales</h1>
+    <p>
+      Somos una empresa dedicada a brindar soluciones integrales en el suministro de materiales para sectores como la
+      Construcción, Transporte, Industria y Agricultura. Nos destacamos por nuestro compromiso con la calidad y el
+      servicio al cliente.
+    </p>
+    <a href="https://wa.me/971164073" class="btn"><i class="fas fa-comments"></i> ¡Contáctanos!</a>
+    <div class="social-links">
+      <a href="https://web.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/?_rdc=1&_rdr" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@chiclayojh" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+  <div class="intro-img">
+    <img src="img/trabajador.jpeg" alt="Trabajadores" class="intro-img__content" />
+  </div>
+</section>
+
+<style>
+/* Estilo principal */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 50px 20px;
+  overflow: hidden;
+}
+
+.intro-text {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.intro-text h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.intro-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.intro-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF8C00;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Espaciado entre el botón y los íconos */
+}
+
+.intro-text .btn:hover {
+  background-color: #FFD700;
+}
+
+.social-links {
+  margin-top: 10px; /* Separación adicional */
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #FF8C00;
+}
+
+.intro-img {
+  max-width: 50%;
+}
+
+.intro-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.intro-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .intro-img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+</style>
+
+
+  <!-- Sección de Misión, Visión y Valores -->
+  <section class="mision-vision">
+    <div class="mision">
+      <h2><i class="fas fa-bullseye"></i> Misión</h2>
+      <p>
+        Somos una empresa comprometida con el desarrollo de la sociedad mediante la distribución de materiales de
+        construcción y ferretería. Nos esforzamos en ofrecer un servicio excelente y precios competitivos para asegurar
+        la satisfacción de nuestros clientes.
+      </p>
+    </div>
+    <div class="vision">
+      <h2><i class="fas fa-eye"></i> Visión</h2>
+      <p>
+        Convertirnos en líderes en el mercado nacional, distinguiéndonos por la alta calidad de nuestros productos y
+        servicios, y por nuestro enfoque en la satisfacción total de nuestros clientes.
+      </p>
+    </div>
+    <div class="valores">
+      <h2><i class="fas fa-hands-helping"></i> Nuestros Valores</h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Compromiso</li>
+        <li><i class="fas fa-check-circle"></i> Responsabilidad</li>
+        <li><i class="fas fa-check-circle"></i> Innovación</li>
+        <li><i class="fas fa-check-circle"></i> Integridad</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección de Ubicación -->
+  <div class="map">
+    <h2><i class="fas fa-map-marker-alt"></i> Ubícanos en</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.9855099482584!2d-79.79787542543848!3d-6.771617093225232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ce8fd3eb7aa5f%3A0x358f04f33e44450a!2sH%26C%20FerroMateriales%20S.R.L!5e0!3m2!1ses!2spe!4v1729782047305!5m2!1ses!2spe"
+      width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Sección de Valores -->
+  <section class="valores">
+    <h2><i class="fas fa-star"></i> Nuestros Valores</h2>
+    <div class="valores-container">
+      <div class="valor-item">
+        <h3><i class="fas fa-handshake"></i> Compromiso</h3>
+        <p>
+          Nuestro equipo se compromete a brindar lo mejor a cada uno de
+          nuestros clientes.
+        </p>
+      </div>
+      <div class="valor-item">
+        <h3><i class="fas fa-headset"></i> Atención al Cliente</h3>
+        <p>
+          Siempre enfocados en ofrecer una excelente atención, adaptada a las
+          necesidades de cada cliente.
+        </p>
+      </div>
+      <div class="valor-item">
+        <h3><i class="fas fa-users"></i> Trabajo en Equipo</h3>
+        <p>
+          Creemos en el trabajo en equipo para lograr los mejores resultados.
+        </p>
+      </div>
+      <div class="valor-item">
+        <h3><i class="fas fa-trophy"></i> Excelencia</h3>
+        <p>Buscamos la excelencia en todos nuestros servicios y productos.</p>
+      </div>
+      <div class="valor-item">
+        <h3><i class="fas fa-thumbs-up"></i> Honestidad</h3>
+        <p>Somos honestos en todas nuestras interacciones comerciales.</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <video autoplay muted loop id="footer-video">
+        <source src="../H&C/assets/images/trabajo/video-ladrillo.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+    </video>
+    
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="icon-section">
+                <div class="icon-item">
+                    <img src="img/FOOTER/mano.svg" alt="Envíos a todo Chiclayo">
+                    <p><i class="fas fa-truck"></i> Envíos a todo Chiclayo<br><small>Rápido y seguro</small></p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/FOOTER/garantia-.svg" alt="Garantía en nuestros productos">
+                    <p><i class="fas fa-shield-alt"></i> Garantía en todos nuestros productos<br><small>Hasta 3 años
+                            de garantía</small></p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/FOOTER/distribuidor.svg" alt="Distribuidores autorizados">
+                    <p><i class="fas fa-certificate"></i> Distribuidores autorizados<br><small>Más de 10
+                            marcas</small></p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/FOOTER/compras-.svg" alt="Compra fácil y segura">
+                    <p><i class="fas fa-shopping-cart"></i> Compra fácil y segura<br><small>Compras 100%
+                            seguras</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h4><i class="fas fa-headset"></i> Servicio al Cliente</h4>
+                <ul>
+                    <li><a href="#" class="footer-link"><i class="fas fa-question-circle"></i> Preguntas
+                            Frecuentes</a></li>
+                    <li><a href="#" class="footer-link">Libro de Reclamos</a></li>
+                    <li><a href="#" class="footer-link">Alquiler de Maquinaria</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-map-marker-alt"></i> Destinos</h4>
+                <ul>
+                    <li><a href="agregados-de-construccion-en-chiclayo.html" class="footer-link">Chiclayo</a></li>
+                    <li><a href="agregados-de-construccion-en-chongoyape.html" class="footer-link">Chongoyape</a>
+                    </li>
+                    <li><a href="agregados-de-construccion-en-patapo.html" class="footer-link">Pátapo</a></li>
+                    <li><a href="agregados-de-construccion-en-lambayeque.html" class="footer-link">Lambayeque</a>
+                    </li>
+                    <li><a href="agregados-de-construccion-en-pimentel.html" class="footer-link">Pimentel</a></li>
+                    <li><a href="agregados-de-construccion-en-santa-rosa.html" class="footer-link">Santa Rosa</a>
+                    </li>
+                    <li><a href="agregados-de-construccion-en-monsefu.html" class="footer-link">Monsefú</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-info-circle"></i> Información</h4>
+                <p>Tienda virtual de agregados de construcción al por mayor desde 10 m<sup>3</sup>. Llámanos al
+                    <a href="tel:+51951570085" class="footer-link">951 570 085</a>.
+                </p>
+                <p>Encuéntranos en
+                    <a href="https://web.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/?_rdc=1&_rdr"
+                        target="_blank" class="footer-link">
+                        <i class="fab fa-facebook"></i> /FerroMateriales
+                    </a>
+                </p>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-store"></i> Nuestras Tiendas Autorizadas</h4>
+                <p>Calle: San Francisco Mz. "E" Lt.5 C.P. San Francisco de Asis, Chiclayo</p>
+                <p>Carretera Pomalca Km 3.50, Mz. E, Lote 6, Urb. Los Precursores, Chiclayo Lambayeque</p>
+            </div>
+            <div class="footer-column">
+                <h4><i class="fas fa-clock"></i> Horario</h4>
+                <p>Lunes a Sábado 7:00 am - 6:00 pm</p>
+                <p>Domingo 8:00 am - 1:00 pm</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <p>&copy; 2024 FerroMateriales. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <img src="assets/images/icon/visa.png" alt="Visa">
+                <img src="assets/images/icon/mastercard.png" alt="MasterCard">
+                <img src="assets/images/icon/paypal.png" alt="PayPal">
+                <img src="assets/images/icon/american-express.png" alt="American Express">
+                <img src="assets/images/icon/discover.png" alt="Discover">
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+     /* FOOTER */
+/* Video de fondo */
+#footer-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Estilos del footer */
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenido sobre el video */
+.footer-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 40px 20px;
+    background-color: rgba(10, 1, 1, 0.405);
+}
+
+.footer-top {
+    border-bottom: 1px solid #e1dede;
+    padding-bottom: 20px;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.icon-item {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.icon-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Ajuste para hacer que las columnas quepan en una sola fila en pantallas grandes */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-column {
+    width: calc(20% - 10px);
+    min-width: 180px;
+    max-width: 250px;
+}
+
+/* Ajuste para los íconos de tarjetas de crédito sin filtro */
+.footer-bottom-bar .social-icons img {
+    max-width: 30px;
+    transition: transform 0.3s;
+    margin: 0 5px;
+}
+
+.footer-bottom-bar .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Otros ajustes para mejorar la visibilidad y el espacio */
+.footer-content {
+    padding: 20px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: orange; /* Color naranja */
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.8); /* Efecto de brillo */
+    animation: flicker 1.5s infinite alternate; /* Animación de parpadeo */
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Estilos de la lista */
+.footer-column ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+}
+
+.footer-column ul li,
+.footer-column p {
+    font-size: 14px;
+}
+
+/* Color blanco para los enlaces */
+.footer-link {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.footer-link:hover {
+    color: #e15103;
+}
+
+.footer-bottom-bar {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #bcadad;
+}
+</style>
+  <!--Estilos para whatsApp y opiones-->
+  <style>
+    .contact-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      /* Color de WhatsApp */
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .contact-card img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .contact-info {
+      flex: 1;
+    }
+
+    .contact-info h5 {
+      margin: 0;
+    }
+
+    .status {
+      font-size: 12px;
+      color: green;
+    }
+
+    .opinion-btn {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background-color: #631804;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .opinion-btn i {
+      font-size: 24px;
+    }
+
+    .opinion-btn:hover {
+      background-color: #ff7a00;
+    }
+
+    /* Estilos para el modal */
+    .modal-header {
+      background-color: #8b1a14;
+      color: white;
+      border-bottom: none;
+    }
+
+    .modal-title {
+      margin: 0 auto;
+    }
+
+    .modal-body {
+      text-align: center;
+    }
+
+    .review-card {
+      display: flex;
+      align-items: flex-start;
+      background-color: #f5f5f5;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .review-card img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+
+    .review-info {
+      flex-grow: 1;
+      margin-left: 15px;
+      text-align: left;
+    }
+
+    .review-info h5 {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .review-info p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .stars {
+      color: #ffd700;
+      font-size: 16px;
+    }
+  </style>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="contact-btn" data-toggle="modal" data-target="#contactModal">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Modal de contacto -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">
+            Contacta con cualquiera de nuestras empleadas para solventar tus
+            dudas.
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Nuestro equipo está listo para atenderle</p>
+
+          <!-- Primera persona de contacto -->
+          <div class="contact-card">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Nayeli" />
+            <div class="contact-info">
+              <h5>Nayeli</h5>
+              <p>Cotizaciones y Ventas</p>
+              <span class="status">En línea</span>
+            </div>
+            <a href="https://web.whatsapp.com/send?phone=+51900028004&text=Hola%20Nayeli,%20quisiera%20solicitar%20una%20cotización%20de%20materiales%20de%20ferretería."
+              target="_blank" class="btn btn-success btn-sm">
+              Enviar mensaje
+            </a>
+          </div>
+
+          <!-- Segunda persona de contacto -->
+          <div class="contact-card">
+            <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Karen" />
+            <div class="contact-info">
+              <h5>Karen</h5>
+              <p>Cotizaciones y Mercadeo</p>
+              <span class="status">En línea</span>
+            </div>
+            <a href="https://web.whatsapp.com/send?phone=+51971164073&text=Hola%20Karen,%20quisiera%20solicitar%20una%20cotización%20de%20materiales%20de%20ferretería."
+              target="_blank" class="btn btn-success btn-sm">
+              Enviar mensaje
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Botón flotante de Opiniones -->
+  <a href="#" class="opinion-btn" data-toggle="modal" data-target="#reviewModal">
+    <i class="fas fa-comments"></i>
+  </a>
+
+  <!-- Modal de Opiniones -->
+  <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel">
+            Opiniones de Clientes
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lo que nuestros clientes opinan sobre nosotros:</p>
+
+          <!-- Primera reseña de cliente -->
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 1" />
+            <div class="review-info">
+              <h5>Carlos Ruiz</h5>
+              <p>
+                ¡Excelente atención! Recibí todo lo que necesitaba para mi
+                proyecto.
+              </p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <!-- Segunda reseña de cliente -->
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Cliente 2" />
+            <div class="review-info">
+              <h5>María González</h5>
+              <p>
+                Gran variedad de productos y precios accesibles. ¡Muy
+                recomendable!
+              </p>
+              <div class="stars">★★★★☆</div>
+            </div>
+          </div>
+
+          <!-- Tercera reseña de cliente -->
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente 3" />
+            <div class="review-info">
+              <h5>Jorge Pérez</h5>
+              <p>
+                El servicio fue rápido y eficiente, sin duda volveré a comprar
+                aquí.
+              </p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts de Bootstrap y FontAwesome -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
